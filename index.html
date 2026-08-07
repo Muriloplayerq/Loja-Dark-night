@@ -1,79 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DARK NIGHT - Loja de Kits</title>
-<style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background-color: #000; color: #fff; font-family: Arial, sans-serif; text-align: center; }
-    header { background: linear-gradient(90deg, #4B0082, #8A2BE2, #4B0082); padding: 25px; font-size: 36px; font-weight: bold; text-shadow: 0 0 15px #8A2BE2; border-bottom: 3px solid #8A2BE2; }
-    .servidor { background-color: #111; padding: 15px; font-size: 18px; color: #8A2BE2; border-bottom: 2px solid #8A2BE2; }
-    h1 { color: #8A2BE2; text-shadow: 0 0 10px #8A2BE2; margin: 30px 0 20px 0; font-size: 28px; }
-    .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 20px; }
-    .kit { background-color: #111; border: 2px solid #8A2BE2; border-radius: 12px; padding: 20px; width: 280px; box-shadow: 0 0 20px #8A2BE2; transition: 0.3s; }
-    .kit:hover { transform: scale(1.05); box-shadow: 0 0 30px #8A2BE2; }
-    .kit h2 { color: #8A2BE2; margin-bottom: 15px; font-size: 22px; text-shadow: 0 0 8px #8A2BE2; }
-    .preco { color: #8A2BE2; font-size: 26px; font-weight: bold; margin: 15px 0; text-shadow: 0 0 10px #8A2BE2; }
-    button { background: linear-gradient(90deg, #5865F2, #7289DA); color: white; border: none; padding: 14px 30px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.3s; }
-    button:hover { background: linear-gradient(90deg, #7289DA, #5865F2); box-shadow: 0 0 15px #7289DA; }
-    footer { margin-top: 40px; padding: 20px; background-color: #111; color: #8A2BE2; border-top: 2px solid #8A2BE2; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK NIGHT - Loja Oficial</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background: #0a0a0a; color: white; text-align: center; }
+        .header { background: linear-gradient(135deg, #6a0dad, #9b30ff); padding: 30px 10px; border-bottom: 3px solid #9b30ff; box-shadow: 0 0 20px #9b30ff; }
+        .header h1 { font-size: 2.5em; text-shadow: 0 0 10px white; }
+        .container { padding: 30px 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .titulo { width: 100%; font-size: 2em; color: #9b30ff; text-shadow: 0 0 10px #9b30ff; margin-bottom: 10px; }
+        .kit { background: #111; border: 2px solid #9b30ff; border-radius: 15px; padding: 20px; width: 300px; box-shadow: 0 0 15px #9b30ff; transition: 0.3s; }
+        .kit:hover { transform: scale(1.05); box-shadow: 0 0 25px #9b30ff; }
+        .kit h2 { color: #9b30ff; font-size: 1.3em; margin-bottom: 10px; text-shadow: 0 0 8px #9b30ff; }
+        .preco { font-size: 1.8em; color: #9b30ff; font-weight: bold; margin-bottom: 15px; }
+        .btn { background: linear-gradient(135deg, #6a0dad, #9b30ff); color: white; padding: 12px 25px; border: none; border-radius: 10px; font-size: 1.1em; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: 0 0 10px #9b30ff; transition: 0.3s; }
+        .btn:hover { background: linear-gradient(135deg, #9b30ff, #6a0dad); box-shadow: 0 0 20px #9b30ff; }
+    </style>
 </head>
 <body>
-<header>⚔️ DARK NIGHT ⚔️</header>
-<div class="servidor">ENTRE NO SERVER: ip:Muriloplayerq.aternos.me:4porta:2843</div>
+    <div class="header"><h1>⚔️ DARK NIGHT ⚔️</h1></div>
+    <div class="container">
+        <h2 class="titulo">LOJA DE KITS</h2>
 
-<h1>LOJA DE KITS</h1>
+        <div class="kit"><h2>[ KIT SUPER CLÃ ]</h2><p class="preco">R$ 65,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT ASTRALY ]</h2><p class="preco">R$ 0,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT CLÃ ]</h2><p class="preco">R$ 40,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT TRIO ]</h2><p class="preco">R$ 20,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT SQUAD ]</h2><p class="preco">R$ 30,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT NETHER ULTRA ]</h2><p class="preco">R$ 9,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT PVP ]</h2><p class="preco">R$ 11,50</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT DUO ]</h2><p class="preco">R$ 15,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT DUO COMPLETO ]</h2><p class="preco">R$ 15,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT NETHER ]</h2><p class="preco">R$ 7,00</p><a href="#" class="btn">Comprar Agora</a></div>
+        <div class="kit"><h2>[ KIT DIMA ULTRA ]</h2><p class="preco">R$ 4,00</p><a href="#" class="btn">Comprar Agora</a></div>
 
-<div class="container">
-    <div class="kit"><h2>[ KIT TRIO ]</h2><p class="preco">R$ 15,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT SQUAD 2 ]</h2><p class="preco">R$ 12,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT SQUAD 3 ]</h2><p class="preco">R$ 18,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT SQUAD 4 ]</h2><p class="preco">R$ 25,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT PVP ]</h2><p class="preco">R$ 8,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT NETHER ]</h2><p class="preco">R$ 10,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT DUO ]</h2><p class="preco">R$ 12,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT DUO COMPLETO ]</h2><p class="preco">R$ 20,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT NETHER ULTRA ]</h2><p class="preco">R$ 14,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT ASTRALY ]</h2><p class="preco">R$ 9,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT SUPER CLA ]</h2><p class="preco">R$ 22,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT DIMA ULTRA ]</h2><p class="preco">R$ 5,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-
-    <div class="kit"><h2>[ KIT CLA ]</h2><p class="preco">R$ 7,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT CLA MAÇÃ ]</h2><p class="preco">R$ 6,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT CLA POÇÃO ]</h2><p class="preco">R$ 8,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT CLA BLOCOS ]</h2><p class="preco">R$ 9,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT CLA TOTEM ]</h2><p class="preco">R$ 10,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT CLA SPEED ]</h2><p class="preco">R$ 5,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT CLA FORÇA ]</h2><p class="preco">R$ 5,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT VINICIUS13 ]</h2><p class="preco">R$ 4,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT DINA ]</h2><p class="preco">R$ 3,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-    
-    <div class="kit"><h2>[ KIT FARM ]</h2><p class="preco">R$ 2,00</p><button onclick="window.open('https://discord.gg/SEULINK')">Comprar no Discord</button></div>
-</div>
-
-<footer>
-    <p>© 2026 DARK NIGHT - Loja Oficial</p>
-</footer>
+    </div>
 </body>
 </html>
