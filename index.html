@@ -2,37 +2,55 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>DARK NIGHT - Loja Oficial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DARK NIGHT - Loja</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Arial',sans-serif}
-body{background:#0a0a0a;color:white;text-align:center}
-.header{background:linear-gradient(135deg,#6a0dad,#9b30ff);padding:30px 10px;border-bottom:3px solid #9b30ff;box-shadow:0 0 20px #9b30ff}
-.header h1{font-size:2.5em;text-shadow:0 0 10px white}
-.container{padding:30px 10px;display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
-.titulo{width:100%;font-size:2em;color:#9b30ff;text-shadow:0 0 10px #9b30ff;margin-bottom:10px}
-.kit{background:#111;border:2px solid #9b30ff;border-radius:15px;padding:20px;width:300px;box-shadow:0 0 15px #9b30ff;transition:0.3s}
-.kit:hover{transform:scale(1.05);box-shadow:0 0 25px #9b30ff}
-.kit h2{color:#9b30ff;font-size:1.3em;margin-bottom:10px;text-shadow:0 0 8px #9b30ff}
-.preco{font-size:1.8em;color:#9b30ff;font-weight:bold;margin-bottom:15px}
-.btn{background:linear-gradient(135deg,#6a0dad,#9b30ff);color:white;padding:12px 25px;border:none;border-radius:10px;font-size:1.1em;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 0 10px #9b30ff;transition:0.3s}
-.btn:hover{background:linear-gradient(135deg,#9b30ff,#6a0dad);box-shadow:0 0 20px #9b30ff}
+    body{background:#000;color:#fff;font-family:Arial;margin:0;text-align:center}
+    header{background:linear-gradient(90deg,#8a2be2,#9400d3);padding:20px;font-size:28px;font-weight:bold;box-shadow:0 0 15px #9400d3}
+    h2{color:#9400d3;margin:20px;font-size:24px;text-shadow:0 0 10px #9400d3}
+    .container{padding:30px 10px;display:flex;flex-direction:column;align-items:center;gap:20px}
+    .kit{background:#111;border:2px solid #9400d3;border-radius:15px;padding:20px;width:90%;max-width:400px;box-shadow:0 0 20px #9400d3;transition:0.3s}
+    .kit:hover{transform:scale(1.03);box-shadow:0 0 30px #8a2be2}
+    .kit h3{color:#9400d3;font-size:20px;margin:0 0 10px}
+    .kit p{font-size:22px;color:#fff;font-weight:bold;margin:0 0 15px}
+    .btn{background:#9400d3;border:none;padding:12px 25px;border-radius:10px;color:#fff;font-weight:bold;cursor:pointer;font-size:16px;transition:0.3s;width:100%}
+    .btn:hover{background:#8a2be2;box-shadow:0 0 15px #8a2be2}
 </style>
 </head>
 <body>
-<div class="header"><h1>⚔️ DARK NIGHT ⚔️</h1></div>
-<div class="container">
-<h2 class="titulo">LOJA DE KITS</h2>
-<div class="kit"><h2>[ KIT SUPER CLÃ ]</h2><p class="preco">R$ 65,00</p><a href="carrinho.html?kit=SUPER CLA&preco=65" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT ASTRALY ]</h2><p class="preco">R$ 75,00</p><a href="carrinho.html?kit=ASTRALY&preco=75" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT CLÃ ]</h2><p class="preco">R$ 40,00</p><a href="carrinho.html?kit=CLÃ&preco=40" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT TRIO ]</h2><p class="preco">R$ 20,00</p><a href="carrinho.html?kit=TRIO&preco=20" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT SQUAD ]</h2><p class="preco">R$ 30,00</p><a href="carrinho.html?kit=SQUAD&preco=30" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT NETHER ULTRA ]</h2><p class="preco">R$ 9,00</p><a href="carrinho.html?kit=NETHER ULTRA&preco=9" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT PVP ]</h2><p class="preco">R$ 11,50</p><a href="carrinho.html?kit=PVP&preco=11.5" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT DUO ]</h2><p class="preco">R$ 15,00</p><a href="carrinho.html?kit=DUO&preco=15" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT DUO COMPLETO ]</h2><p class="preco">R$ 15,00</p><a href="carrinho.html?kit=DUO COMPLETO&preco=15" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT NETHER ]</h2><p class="preco">R$ 7,00</p><a href="carrinho.html?kit=NETHER&preco=7" target="_blank" class="btn">Comprar Agora</a></div>
-<div class="kit"><h2>[ KIT DIMA ULTRA ]</h2><p class="preco">R$ 4,00</p><a href="carrinho.html?kit=DIMA ULTRA&preco=4" target="_blank" class="btn">Comprar Agora</a></div>
-</div>
+<header>⚔️ DARK NIGHT ⚔️</header>
+<h2>LOJA DE KITS</h2>
+<div class="container" id="kits"></div>
+
+<script>
+const kits = [
+    {nome:"[ KIT CLÃ ]", preco:50},
+    {nome:"[ KIT ASTRALY ]", preco:75},
+    {nome:"[ KIT BÁSICO ]", preco:40},
+    {nome:"[ KIT NETHER CLÃ ]", preco:60},
+    {nome:"[ KIT SQUAD ]", preco:30},
+    {nome:"[ KIT NETHER SQUAD ]", preco:40},
+    {nome:"[ KIT DUO ]", preco:15},
+    {nome:"[ KIT DUO CLÃ ]", preco:10},
+    {nome:"[ KIT NETHER ]", preco:7},
+    {nome:"[ KIT DIMA ULTRA ]", preco:4}
+];
+
+const container = document.getElementById('kits');
+kits.forEach(kit=>{
+    container.innerHTML += `
+    <div class="kit">
+        <h3>${kit.nome}</h3>
+        <p>R$ ${kit.preco.toFixed(2).replace('.',',')}</p>
+        <button class="btn" onclick="comprar('${kit.nome}',${kit.preco})">Comprar Agora</button>
+    </div>`;
+});
+
+function comprar(nome, preco){
+    localStorage.setItem('kitNome', nome);
+    localStorage.setItem('kitPreco', preco);
+    window.location.href = 'carrinho.html';
+}
+</script>
 </body>
 </html>
