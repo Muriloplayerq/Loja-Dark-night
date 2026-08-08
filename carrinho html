@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar Compra - DARK NIGHT</title>
+<style>
+    body{background:#000;color:#fff;font-family:Arial;margin:0;text-align:center}
+    header{background:linear-gradient(90deg,#8a2be2,#9400d3);padding:20px;font-size:24px;font-weight:bold}
+    .box{background:#111;border:2px solid #9400d3;border-radius:15px;padding:25px;margin:30px auto;width:90%;max-width:400px;box-shadow:0 0 20px #9400d3}
+    h2{color:#9400d3}
+    .preco{font-size:28px;color:#0f0;font-weight:bold;margin:15px 0}
+    input{padding:10px;width:80px;font-size:18px;text-align:center;background:#222;color:#fff;border:1px solid #9400d3;border-radius:8px;margin:10px}
+    .btn{background:#9400d3;border:none;padding:15px;width:100%;border-radius:10px;color:#fff;font-weight:bold;cursor:pointer;font-size:18px;margin-top:10px}
+    .btn:hover{background:#8a2be2}
+    .pix-box{display:none;margin-top:20px;padding:15px;background:#222;border-radius:10px}
+    .pix-chave{background:#000;padding:10px;border-radius:8px;word-break:break-all;margin:10px 0}
+    .copiar{background:#0f0;color:#000;padding:8px;border:none;border-radius:5px;cursor:pointer;font-weight:bold}
+    .sucesso{display:none;color:#0f0;font-size:18px;font-weight:bold;margin-top:15px}
+</style>
+</head>
+<body>
+<header>⚔️ FINALIZAR COMPRA ⚔️</header>
+<div class="box">
+    <h2 id="kitNome"></h2>
+    <p>Preço Unitário: <span class="preco" id="kitPreco"></span></p>
+    <label>Quantidade:</label>
+    <input type="number" id="qtd" value="1" min="1" oninput="atualizarTotal()">
+    <p>Total: <span class="preco" id="total"></span></p>
+    <button class="btn" onclick="mostrarPix()">Finalizar Compra</button>
+    <div class="pix-box" id="pixBox">
+        <h3>Pague com Pix</h3>
+        <p>Escaneie ou copie a chave:</p>
+        <div class="pix-chave" id="pixCopia">437144b6-5d40-4f01-b803-c33d1bf041c0</div>
+        <button class="copiar" onclick="copiarPix()">Copiar Pix</button>
+        <br><br>
+        <button class="btn" onclick="confirmarPagamento()">Já paguei</button>
+        <p class="sucesso" id="msgSucesso">✅ KIT ENVIADO COM SUCESSO! Favor enviar comprovante no ticket do Discord</p>
+    </div>
+</div>
+<script>
+    const nome = localStorage.getItem('kitNome');
+    const preco = parseFloat(localStorage.getItem('kitPreco'));
+    document.getElementById('kitNome').innerText = nome;
+    document.getElementById('kitPreco').innerText = 'R$ ' + preco.toFixed(2).replace('.',',');
+    function atualizarTotal(){
+        const qtd = document.getElementById('qtd').value;
+        const total = preco * qtd;
+        document.getElementById('total').innerText = 'R$ ' + total.toFixed(2).replace('.',',');
+    }
+    atualizarTotal();
+    function mostrarPix(){document.getElementById('pixBox').style.display='block'}
+    function copiarPix(){
+        navigator.clipboard.writeText(document.getElementById('pixCopia').innerText);
+        alert('Chave Pix copiada!');
+    }
+    function confirmarPagamento(){
+        document.getElementById('msgSucesso').style.display='block';
+    }
+</script>
+</body>
+</html>
