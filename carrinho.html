@@ -22,11 +22,11 @@
 <body>
 <header>⚔️ FINALIZAR COMPRA ⚔️</header>
 <div class="box">
-    <h2 id="kitNome"></h2>
-    <p>Preço Unitário: <span class="preco" id="kitPreco"></span></p>
+    <h2 id="kitNome">Carregando...</h2>
+    <p>Preço Unitário: <span class="preco" id="kitPreco">R$ 0,00</span></p>
     <label>Quantidade:</label>
     <input type="number" id="qtd" value="1" min="1" oninput="atualizarTotal()">
-    <p>Total: <span class="preco" id="total"></span></p>
+    <p>Total: <span class="preco" id="total">R$ 0,00</span></p>
     <button class="btn" onclick="mostrarPix()">Finalizar Compra</button>
     <div class="pix-box" id="pixBox">
         <h3>Pague com Pix</h3>
@@ -39,8 +39,8 @@
     </div>
 </div>
 <script>
-    const nome = localStorage.getItem('kitNome');
-    const preco = parseFloat(localStorage.getItem('kitPreco'));
+    const nome = localStorage.getItem('kitNome') || 'Kit';
+    const preco = parseFloat(localStorage.getItem('kitPreco')) || 0;
     document.getElementById('kitNome').innerText = nome;
     document.getElementById('kitPreco').innerText = 'R$ ' + preco.toFixed(2).replace('.',',');
     function atualizarTotal(){
